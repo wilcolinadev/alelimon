@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../WebApp"
+		},
+		{
+			"path": "../WebDesign"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../insomnia-freaky-fest-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "alelimon-main"
+	}
+}
