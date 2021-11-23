@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Russo+One&family=Work+Sans:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:ital,wght@0,100;0,400;0,600;1,200&family=Russo+One&family=Work+Sans:ital,wght@0,300;0,400;0,500;1,200&display=swap');
 /*Defining some global styles */
-
+/*
+Colors:
+#ed8e88;
+#ef8048;
+#bad268;
+#Ed9c7b;
+#ffda99;
+#fff8f0:
+*/
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +16,9 @@
 
 html, body{
     /*font-family: 'Caveat', cursive;
-    font-family: 'Russo One', sans-serif;*/
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Work Sans', sans-serif;*/
+    font-family: "poppins", sans-serif;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     font-size: 1rem;
@@ -56,12 +65,15 @@ body{
     
     background-position: center;
     background-attachment: fixed;
-    background-image: url(./assets/background-alelimon.jpg);
+   
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+  
+    height: 100%;
     background-attachment: fixed;
+    background-image: url(./assets/AnimatedShapePhone.svg);
+    
 }
+
 
 /* ----------------------------------------------- */
   /*--------Nav------------*/
@@ -101,15 +113,15 @@ nav ul{
     justify-content: flex-end;
 
 }
-nav  a{
+nav .navigationList a {
     color: #000;
     font-size: 1.2rem;
     transition: 0.5s ease-in; 
 }
-nav a:hover{
+nav  .navigationList a:hover{
   
   transition: 0.3s ease-in;   
-  border-bottom: 2px double #000;
+  border-bottom: 2px solid #c1df88;
 }
 
 
@@ -157,7 +169,7 @@ nav img{
   right: 0;
   bottom: 0;
   z-index: 99;
-  background: #fae6bf;
+  background: #fff8f0;
   color: white;
   padding-top: 4rem;
   text-align: center;
@@ -165,14 +177,37 @@ nav img{
   
 }
 
+.hamburgerLink{
+ 
+  color: #000;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight:  400;
+  letter-spacing: 2px;
+  
+}
+.hamburgerLink:hover{
+  color: #ef8048;
+  transition: 0.6s;
+}
+
 .showMenu{
   transform: translateY(0);
 }
 .menu ul {
-  margin-top: 2rem;
+  margin-top: 1rem;
   list-style: none;
   display: flex;
   flex-flow: column wrap;
+}
+
+.menu li{
+  margin-top: 1rem;
+}
+
+.hamburguerImage img{
+width: 180px;
+height: auto;
 }
 .icon{
   font-size: 2rem;
@@ -186,11 +221,76 @@ nav img{
   transition: 1ms;
 }
 
+/* ----------------------------------------------- */
+  /*---------Main------------*/
+/* ----------------------------------------------- */
+.wrapper{
+ margin-top: 2.7rem;
+  
+  
+}
+.LogoWrapper{
+  text-align: center;
 
+}
+
+.LogoWrapper img{
+  width: 240px;
+  height: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.OnlineImage img{
+  width: 200px;
+  height: auto;
+}
+
+.contentBox h2{
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.contentBox p{
+font-size: 1rem;
+}
+.contentBox{
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.buttonWrapper{
+  text-align: center;
+  margin-top: 1rem;
+}
+.buttonWrapper button{
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 0.7rem;
+  color: #000;
+  font-weight: bold;
+  
+  border-radius: 0.12rem;
+  font-family: "poppins" sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 0 0.04em 0.04em #fae6bf;
+  transition: all 0.15s;
+  box-sizing: border-box;
+  cursor: pointer;
+  
+}
+.buttonWrapper button:hover{
+  background-color: #c1df88;
+  transition: all 0.15s;
+}
 
 
 
 @media only screen and (min-width: 700px)  {
+
+main{
+  background-color: #c1df88;
+}
   nav {
     height: 3.2rem;
     justify-content: space-around;
@@ -237,4 +337,11 @@ nav ul{
     nav .hamburger{
       flex: 0 0 25%;
     }
-}
+
+    .wrapper{
+      width: 50%;
+      height: 100vh;
+     background-color: #fff8f0;
+    }
+
+  }
