@@ -244,15 +244,18 @@ height: auto;
 .OnlineImage img{
   width: 200px;
   height: auto;
+  
 }
 
-.contentBox h2{
+main h2{
   font-family: 'Caveat', cursive;
   text-align: center;
   font-size: 2.5rem;
 }
 .contentBox p{
+  margin-top: 0.3rem;
 font-size: 1rem;
+text-align: center;
 }
 .contentBox{
   margin-top: 1rem;
@@ -284,6 +287,44 @@ font-size: 1rem;
   transition: all 0.15s;
 }
 
+.sectionTwo{
+  margin-top: 2rem;
+}
+
+.sectionTwo .OnlineImage {
+  text-align: right;
+}
+
+.sectionTwo .buttonWrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+.sectionTwo .buttonWrapper button{
+  flex: 0 0 40%;
+}
+.sectionTwo .buttonWrapper .whatsapp{
+  background-color: #c1df88;
+}
+.sectionTwo .buttonWrapper .whatsapp:hover{
+  background-color: #25d366;
+}
+
+.sectionFour img{
+  width: 180px;
+  height: auto;
+}
+.sectionFour{
+  text-align: center;
+  margin: 2.4rem;
+}
+main .iconMain {
+  position: relative;
+  font-size: 1rem;
+  top: .2rem;
+  right: .2rem;
+}
 
 
 @media only screen and (min-width: 700px)  {
