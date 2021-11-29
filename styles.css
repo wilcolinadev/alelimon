@@ -34,27 +34,6 @@ a{
 /* Extras*/
 /* ----------------------------------------------- */
 
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #3c1642; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-
-    background: #b2ff9e;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #086375; 
-  }
-
 
 
 /* ----------------------------------------------- */
@@ -127,8 +106,8 @@ nav  .navigationList a:hover{
 
 
 nav img{
-    width: 130px;
-    margin-top: 0.2rem;
+    width: 85px;
+    
 }
 
 .navigationList{
@@ -226,7 +205,6 @@ height: auto;
 /* ----------------------------------------------- */
 .wrapper{
  margin-top: 2.7rem;
-  
   
 }
 .LogoWrapper{
@@ -327,10 +305,70 @@ main .iconMain {
 }
 
 
+
+/* ----------------------------------------------- */
+  /*---------Footer------------*/
+/* ----------------------------------------------- */
+footer{
+  background-color: #fae6bf;
+  text-align: center;
+}
+
+footer .footerBox li{
+  padding: .3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight:  400;
+  letter-spacing: 2px;
+  color: #000;
+  text-decoration: none;
+}
+
+footer .footerBox li:hover{
+ 
+  transition: 0.3s ease-in;   
+  text-decoration: underline;
+  text-decoration-color: #c1df88;
+
+  
+}
+
+
+
+footer .footerBox{
+  padding-top: 1rem;
+}
+
+footer img{
+  width: 120px;
+  height: auto;
+
+}
+
+.imageBox {
+  text-align: center;
+  margin-top: .5rem;  
+}
+
+.iconBox{
+  margin-top: .5rem;
+}
+.iconFooter{
+font-size: 1.5rem; 
+color: #000;
+padding: .5rem;
+}
+
+footer p {
+  font-size: 1rem;
+  padding: .5rem;
+}
+
+
 @media only screen and (min-width: 700px)  {
 
 main{
-  background-color: #c1df88;
+  background-color: #fff;
 }
   nav {
     height: 3.2rem;
@@ -379,10 +417,65 @@ nav ul{
       flex: 0 0 25%;
     }
 
-    .wrapper{
-      width: 50%;
+    .firstBlock{
+      padding-top:  3.2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
       height: 100vh;
+    }
+    .OnlineImage img{
+      
+    }
+   
+
+    .LogoWrapper img{
+      width: 350px;
+    }
+
+    .wrapper{
+     margin-top: 0;
      background-color: #fff8f0;
     }
 
+    .sectionTwo{
+     margin-top: 0;
+    }
+
+    .wrapper, .sectionTwo{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;    
+    }
+    .LogoWrapper{
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .OnlineImage{
+      grid-area: 2 / 1 / 3 / 2; 
+      
+    }
+    .sectionTwo .OnlineImage img{
+      text-align: left;
+    }
+
+    .SectionOne{
+      
+      grid-area: 3 / 1 / 5 / 2;
+      
+    }
+
+    .contentBox{
+      margin: 0;
+      padding: 0;
+    }
+
+   
+    .SectionTwoBox{
+      grid-area: 3 / 1 / 5 / 2;
+    }
   }
