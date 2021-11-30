@@ -43,7 +43,7 @@ a{
 body{
     
     background-position: center;
-    background-attachment: fixed;
+   
    
     background-size: cover;
   
@@ -203,9 +203,8 @@ height: auto;
 /* ----------------------------------------------- */
   /*---------Main------------*/
 /* ----------------------------------------------- */
-.wrapper{
- margin-top: 2.7rem;
-  
+.firstBlock{
+  margin-top: 3.3rem;
 }
 .LogoWrapper{
   text-align: center;
@@ -224,7 +223,9 @@ height: auto;
   height: auto;
   
 }
-
+.OnlineImage{
+  text-align: center;
+}
 main h2{
   font-family: 'Caveat', cursive;
   text-align: center;
@@ -269,9 +270,7 @@ text-align: center;
   margin-top: 2rem;
 }
 
-.sectionTwo .OnlineImage {
-  text-align: right;
-}
+
 
 .sectionTwo .buttonWrapper{
   display: flex;
@@ -302,6 +301,10 @@ main .iconMain {
   font-size: 1rem;
   top: .2rem;
   right: .2rem;
+}
+
+.sectionTwo{
+  margin-bottom: 2rem;
 }
 
 
@@ -363,12 +366,68 @@ footer p {
   font-size: 1rem;
   padding: .5rem;
 }
+#myVideo {
+  
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  height: 30vh;
+  grid-area: 1 / 1 / 4 / 2;
+  z-index: -1;
+  object-fit: cover;
+
+}
+
+#videoWrapper{
+  
+  background-color: #fff8f0;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.logoWrapper img{
+  width: 250px;
+  height: auto;
+}
+
+.logoWrapper{
+  text-align: center;
+}
+.SectionOne .OnlineImage img{
+  width: 20px;
+}
+.SectionOne .OnlineImage {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.firstBlock{
+ 
+  grid-template-columns: repeat(1, 1fr);
+  
+}
 
 
-@media only screen and (min-width: 700px)  {
 
+@media only screen and (min-width: 1000px)  {
+body{
+  background-image: url(./assets/AnimatedShape.svg);
+  background-attachment: scroll;
+  background-position: center;
+}
 main{
   background-color: #fff;
+}
+.firstBlock{
+  margin-top: 3.2rem;
 }
   nav {
     height: 3.2rem;
@@ -392,7 +451,7 @@ nav ul{
     }
 
     nav img{
-        width: 130px;
+        width: 100px;
         height: auto;
         margin-top: 0.2rem;
     }
@@ -418,64 +477,90 @@ nav ul{
     }
 
     .firstBlock{
-      padding-top:  3.2rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
-      height: 100vh;
-    }
-    .OnlineImage img{
-      
-    }
-   
-
-    .LogoWrapper img{
-      width: 350px;
     }
 
-    .wrapper{
-     margin-top: 0;
-     background-color: #fff8f0;
-    }
-
-    .sectionTwo{
-     margin-top: 0;
-    }
-
-    .wrapper, .sectionTwo{
+    .FirstContainer{
+      grid-area: 1 / 1 / 2 / 2;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 0px;
-      grid-row-gap: 0px;    
-    }
-    .LogoWrapper{
-      grid-area: 1 / 1 / 3 / 2;
+      grid-row-gap: 0px;
+      height: 100vh;
+      background-color:#fff8f0;
     }
 
-    .OnlineImage{
+    .secondContainer{
+      grid-area: 1 / 2 / 2 / 3;
+      
+      height: 100vh;
+    }
+
+    .logoWrapper img{
+      width: 570px;
+      height: auto;
+    }
+ 
+
+    .wrapper{
       grid-area: 2 / 1 / 3 / 2; 
+    }
+   
+    #myVideo {
+      
+      height: 100vh;
+      grid-area: 1 / 1 / 4 / 2;
+    
+    }
+    
+    #videoWrapper{
+     
+      grid-template-rows: repeat(3, 1fr);
       
     }
-    .sectionTwo .OnlineImage img{
-      text-align: left;
+
+    .SectionOne .OnlineImage img{
+      width: 20px;
+    }
+   .SectionOne .OnlineImage {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .OnlineImage img{
+      width: 300px;
+    } 
+
+    .SectionOne, .sectionTwo, .SectionThree{
+      margin-bottom: 4rem;
     }
 
     .SectionOne{
-      
-      grid-area: 3 / 1 / 5 / 2;
-      
+      margin-top: 2rem;
     }
 
-    .contentBox{
-      margin: 0;
-      padding: 0;
+    .sectionFour img{
+      width: 250px;
     }
 
-   
-    .SectionTwoBox{
-      grid-area: 3 / 1 / 5 / 2;
+
+    .sectionTwo .buttonWrapper button{
+      flex: 0 0 15%;
+      margin: 2rem;
     }
+
+    .sectionTwo .buttonWrapper{
+      display: flex;
+      justify-content: center;
+      flex-flow: row nowrap;
+    }
+    
+
   }
+    
+  
