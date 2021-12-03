@@ -1,0 +1,106 @@
+.firstBlock .OnlineImage{
+    transform: rotate(180deg);
+}
+
+.map{
+    text-align: center;
+    
+}
+
+.map iframe{
+    border: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.SectionTwoBox p {
+    text-align: left;
+    padding: .5rem;
+}
+.sectionTwo{
+    margin-top: 0;
+}
+
+.contentBox{
+    padding: 0;
+}
+
+.listBox{
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+.listBox p{
+    text-align: left;
+    padding: 0;
+    margin-top: 1.2rem;
+    
+}
+
+@media only screen and (min-width: 1000px)  {
+
+     .secondContainer{
+  
+        
+        background-image: url(./assets/backgroundTwo.jpeg);
+        
+      }
+
+      .firstBlock .OnlineImage{
+          transform: rotate(180deg);
+      }
+      .firstBlock .OnlineImage img{
+        width: 30px;
+    }
+
+   
+    .SectionTwoBox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+   .sectionTwo .contentBox {
+       
+        grid-area: 1 / 1 / 2 / 2;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+    }
+    .aboutData{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .map{
+        grid-area: 1 / 2 / 2 / 3; 
+        
+    }
+
+    .SectionTwoBox p {
+        text-align: left;
+        padding: 1rem;
+    }   
+
+    .listBox{
+        width: 50%;
+        padding: 0;
+    }
+    
+
+    .map iframe{
+        width: 100%;
+        padding: 0;
+        border: 0;
+        height: 400px;
+    }
+    
+
+}

@@ -236,8 +236,10 @@ main h2{
 }
 .contentBox p{
   margin-top: 0.3rem;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: center;
+
+word-spacing: 2px;
 }
 .contentBox{
   margin-top: 1rem;
