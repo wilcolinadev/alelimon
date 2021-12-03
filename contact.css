@@ -1,0 +1,19 @@
+.firstBlock .OnlineImage{
+    transform: rotate(180deg);
+}
+
+
+@media only screen and (min-width: 1000px)  {
+
+    .secondContainer{
+ 
+       
+       background-image: url(./assets/backgroundThree.jpeg);
+       
+     }
+
+     .firstBlock .OnlineImage img{
+        width: 30px;
+    }
+
+    }

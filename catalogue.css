@@ -1,0 +1,105 @@
+.firstBlock .OnlineImage{
+    transform: rotate(180deg);
+}
+
+.sectionTwo{
+    background-color: #fff;
+}
+
+
+@media only screen and (min-width: 1000px)  {
+
+    .secondContainer{
+ 
+       
+       background-image: url(./assets/backgroundFour.jpeg);
+       
+     }
+
+     .firstBlock .OnlineImage img{
+        width: 30px;
+    }
+
+    .logoWrapper img{
+        width: 400px;
+    }
+
+   
+
+    }
+
+    .sectionOneSubBox p{
+        text-align: center;
+        font-size: 1.1rem;
+        
+    }
+    
+    .sectionOneSubBox .subDescription{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .imageWrapper img{
+        width:200px;
+        height: auto;
+        padding: 1.5rem;
+        margin: auto;
+        text-align: center;
+       
+    }
+    .box{
+       text-align: center;
+       
+       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       display: flex;
+       justify-content: center;
+       flex-flow: column wrap;
+       margin: 1rem;
+    
+    }
+    
+    .imageWrapper{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+       
+    }
+    
+    @media only screen and (min-width: 700px)  {
+   
+        .imageWrapper{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        
+        }
+       
+    
+        .imageWrapper img{
+            width: 270px;
+            height: auto;
+            padding: 1.5rem;
+            transform: scale(1.05);
+            transition: transform 0.5s;
+        }
+
+        .imageWrapper img:hover{
+            opacity: 1;
+            transform: scale(1.15);
+            
+        }
+    
+        .box{
+            
+            margin-top: 2rem;
+            padding: 1rem;
+            flex: 0 0 30%;
+            box-sizing: border-box;
+         }
+         
+        
+        
+    
+    }
+    

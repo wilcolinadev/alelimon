@@ -492,7 +492,7 @@ nav ul{
       background-position: center;
       position: relative;
       grid-area: 1 / 2 / 2 / 3;
-      background-image: url(./assets/backgroundOne.png);
+      background-image: url(./assets/backgroundOne.jpeg);
       background-size: cover;
       height: 100vh;
     }
