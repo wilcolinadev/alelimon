@@ -37,7 +37,27 @@ a{
 /* Extras*/
 /* ----------------------------------------------- */
 
+::-webkit-scrollbar {
+  width: 7px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  
+  background: #c1df88; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ 
+  background: #ef8048;
+}
 
 /* ----------------------------------------------- */
   /*---------Background------------*/
@@ -290,7 +310,7 @@ word-spacing: 2px;
   background-color: #c1df88;
 }
 .sectionTwo .buttonWrapper .whatsapp:hover{
-  background-color: #25d366;
+  background-color: #ef8048;
 }
 
 .SectionOne .buttonWrapper button:hover{

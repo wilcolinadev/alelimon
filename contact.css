@@ -3,6 +3,56 @@
 }
 
 
+form{
+    
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-flow: column ;
+    
+    width: 85%;
+    padding: .8rem;
+    margin: 0 auto;
+    background-color: #fae6bf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-sizing: border-box;
+}
+
+label{
+    display: none;
+}
+
+input, textarea{
+    font-family: "poppins" sans-serif;
+    border: none;
+    margin-top: 1rem;
+    font-size: .8rem;
+    padding: .6rem;
+}
+
+.buttonWrapper button{
+    background-color: #c1df88;
+    
+  }
+
+
+  .buttonWrapper button:hover{
+    background-color: #ef8048;
+    
+  }
+
+
+textarea{
+    height: 8rem;
+}
+
+
+.contentBox p{
+    margin-bottom: 1rem;
+}
+
+.sectionTwo{
+    margin: 0;
+}
 @media only screen and (min-width: 1000px)  {
 
     .secondContainer{
@@ -15,5 +65,28 @@
      .firstBlock .OnlineImage img{
         width: 30px;
     }
+
+    form{
+        margin-top: 1rem;
+        padding: 2rem;
+    
+        
+        width: 60%;
+        
+        
+    }
+
+      
+    input, textarea{
+        font-family: "poppins" sans-serif;
+        border: none;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        padding: .6rem;
+    }
+    .logoWrapper img{
+        width: 450px;
+    }
+    
 
     }
