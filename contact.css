@@ -22,12 +22,13 @@ label{
 }
 
 input, textarea{
-    font-family: "poppins" sans-serif;
-    border: none;
+    font-family: "poppins";
     margin-top: 1rem;
     font-size: .8rem;
     padding: .6rem;
 }
+
+
 
 .buttonWrapper button{
     background-color: #c1df88;
