@@ -1,6 +1,6 @@
 # Alelimon 🍋
 
-## Alelimon is a online clothing store for Women in Venezuela. It is a basic website with the idea to introduce the store to the costumers and present a difference face of the store. since the main selling platform used is Instagram and Whatsapp.
+## Alelimon is an online clothing store for women in Venezuela. It is a basic website with the idea to introduce the store to the customers and present a different face of the store since the main selling platform used is Instagram and Whatsapp.
 
 ### Built with
 - HTML
