@@ -9,7 +9,7 @@
 - Flexbox
 - JavaScript
 - Alelimon provided all the design logos, fonts, colors and photos. 
-
+- I used undraw to support the design. Link -> [Undraw](https://undraw.co/)
 
 ### Link to the Project->[Alelimon by Wilcodes and Trinidad Pinto](https://awesome-mcclintock-6a9ec4.netlify.app)!
 
